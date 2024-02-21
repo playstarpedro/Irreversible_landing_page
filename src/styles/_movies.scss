@@ -1,0 +1,58 @@
+@use 'variaveis';
+
+.movies {
+    padding: 2vw 5.6vw;
+    min-height: 50vw;
+    background-color: variaveis.$backgroundColor;
+    
+    h2 {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    &__list {
+        margin-top: 44px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+
+        @media (max-width: 768px) {
+        display: block;
+        }
+
+        &__item {
+            cursor: pointer;
+
+            @media (max-width: 768px) {
+                margin-bottom: 10px;
+            }
+
+            h3 {
+                display: none;
+            }
+
+            img {
+                max-width: 100%;
+                border-radius: 10px;
+            }
+
+            &:hover {
+                position: relative;
+                text-align: center;
+                
+                h3 {
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    right: 0;
+                    transform: translateY(-50%);
+                }
+                img {
+                    transition: ease 0.5s;
+                    filter: brightness(30%);
+                }
+            }
+        }
+    }
+}

@@ -6,12 +6,22 @@
     background-size: cover;
     padding: 5.6vw;
     padding-bottom: 100px;
+    min-height: 80vh;
+
+    @media (max-width: 768px) {
+        background-image: url(../images/hero_irreversible_mobile.png);
+    }
 
     h2 {
         text-align: center;
     }
 
     &__places {
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+
         display: flex;
         justify-content: space-around;
         margin-top: 50px;
@@ -32,6 +42,10 @@
                 height: 180px;
                 max-width: 100%;
                 border-radius: 10px;
+
+                @media (max-width: 768px) {
+                    height: 130px;
+                }
             }
 
             strong {

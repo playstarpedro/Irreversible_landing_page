@@ -7,6 +7,24 @@
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./dist/images/Irreversible_branding-removebg-preview.png" alt="">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a class="header__button" href="#watch">Onde assistir</a>
+                </li>
+                <li class="header__links__item">
+                    <a class="header__button" href="#director">Gaspar Noé</a>
+                </li>
+                <li class="header__links__item">
+                    <a class="header__button" href="#movies">Mais Filmes</a>
+                </li>
+            </ul>
+        </div>
+    </header>
     <section class="hero">
         <div class="hero__content">
             <div class="hero__content__branding">
@@ -37,7 +55,7 @@
             </p>
         </div>
     </section>
-    <section class="watch">
+    <section class="watch" id="watch">
         <h2 class="title--big">Onde assistir?</h2>
         <ul class="watch__places">
             <li class="watch__places__item">
@@ -66,14 +84,43 @@
             </li>          
         </ul>
     </section>
-    <section class="image-text-section">
+    <section class="image-text-section" id="director">
         <img src="./dist/images/gaspar.jpg" alt="Diretor do filme, Gaspar Noé">
         <div class="image-text-section__text_container">
-            <h2 class="title">Quem é Gaspar Noé</h2>
+            <h2 class="title">Quem é Gaspar Noé?</h2>
             <p class="text--big">
                 Gaspar Noé é um cineasta franco-argentino. Em seus filmes o diretor e roteirista geralmente aborda temas como: sexo, violência, vingança. Começou a ficar conhecido pelo seu curta-metragem Carne, que algumas vezes é citado como seu primeiro trabalho, o que não é verdade, sendo na verdade o curta Tintarella di luna
             </p>
         </div>
+    </section>
+    <section class="movies" id="movies">
+        <h2 class="title">Mais FIlmes</h2>
+        <ul class="movies__list">
+            <li class="movies__list__item">
+                <img src="./dist/images/movies/enter.jpg" alt="filme Enter the void">
+                <h3 class="title--small">Enter The Void</h3>
+            </li>
+            <li class="movies__list__item">
+                <img src="./dist/images/movies/climax.png" alt="filme Climax">
+                <h3 class="title--small">Climax</h3>
+            </li>
+            <li class="movies__list__item">
+                <img src="./dist/images/movies/love.png" alt="filme Love">
+            <h3 class="title--small">Love</h3>
+            </li>
+            <li class="movies__list__item">
+                <img src="./dist/images/movies/alone.webp" alt="filme I stand Alone">
+            <h3 class="title--small">I Stand Alone</h3>
+            </li>
+            <li class="movies__list__item">
+                <img src="./dist/images/movies/lux.jpg" alt="filme Lux Aeterna">
+            <h3 class="title--small">Lux Aeterna</h3>
+            </li>
+            <li class="movies__list__item">
+                <img src="./dist/images/movies/vortex.jpg" alt="filme Vortex">
+            <h3 class="title--small">Vortex</h3>
+            </li>
+        </ul>
     </section>
     
 </body>
