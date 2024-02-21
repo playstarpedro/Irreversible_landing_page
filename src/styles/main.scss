@@ -1,0 +1,116 @@
+@use 'hero';
+@use 'variaveis';
+@use 'watch';
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Bold.woff2);
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Avenir, sans-serif; 
+    list-style: none;
+}
+
+body {
+    background-color: variaveis.$backgroundColor;
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$primaryTextColor;
+}
+
+@mixin title($fontSize: 40px) {
+    @include text($fontSize);
+    color: variaveis.$secondaryTextColor;
+}
+
+.text {
+    @include text
+}
+
+.text--small {
+    @include text(12px)
+}
+
+.text--big {
+    @include text(18px);
+}
+
+.title {
+    @include title;
+}
+
+.title--small {
+    @include title(28px);
+}
+
+.title--big {
+    @include title(44px);
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    background-color: variaveis.$secondaryTextColor;
+    border-radius: 10px;
+    padding: 24px;
+    display: flex;
+    border: none;
+    box-sizing: border-box;
+    overflow: visible;
+    width: 100%;
+
+    img {
+        max-height: 26px;
+        margin-right: 14px;
+    }
+
+    &:hover {
+        background-color: lighten(variaveis.$secondaryTextColor, 10%);
+    }
+}
+
+.image-text-section {
+    background-color: #580606;
+    padding: 5.6vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
+    img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    &__text_container {
+        padding: 0 2vw;
+
+        h2 {
+            margin-bottom: 24px;
+        }
+
+        p {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 14px;
+            border-radius: 10px;
+        }
+    }
+}
+

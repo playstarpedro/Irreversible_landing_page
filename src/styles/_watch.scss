@@ -1,0 +1,44 @@
+@use 'variaveis';
+
+.watch {
+    background-image: url(/src/images/alex-front2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5.6vw;
+    padding-bottom: 100px;
+
+    h2 {
+        text-align: center;
+    }
+
+    &__places {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+
+        .button {
+            width: 220px;
+            margin: 24px auto;
+            justify-content: center;
+        }
+
+        &__item {
+            text-align: center;
+            padding: 60px 44px 44px;
+            max-width: 500px;
+            width: 100%;
+
+            img {
+                height: 180px;
+                max-width: 100%;
+                border-radius: 10px;
+            }
+
+            strong {
+                display: block;
+                margin-top: 24px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
