@@ -9,6 +9,7 @@
 
     @media (max-width: 768px) {
         background-image: url(../images/hero_irreversible_mobile.png);
+        border-bottom: 1px solid variaveis.$secondaryTextColor;
     }
 
     .button {

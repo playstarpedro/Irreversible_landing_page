@@ -10,6 +10,9 @@
 
     @media (max-width: 768px) {
         background-image: url(../images/hero_irreversible_mobile.png);
+        background-size: 375px 1675px;
+        background-size: cover;
+        background-position: -250px;
     }
 
     h2 {

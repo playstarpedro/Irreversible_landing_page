@@ -31,6 +31,10 @@
     &__links {
         display: flex;
 
+        @media (max-width: 768px) {
+            justify-content: center;
+        }
+
         &__item {
             margin: 10px;
         }
@@ -43,6 +47,11 @@
         border: 1px solid variaveis.$secondaryTextColor;
         color: variaveis.$secondaryTextColor;
         border-radius: 10px;
+        
+        @media (max-width: 768px) {
+            height: 10px;
+            font-size: 10px;
+        }
         
         &:hover {
             transition: .2s ease;
